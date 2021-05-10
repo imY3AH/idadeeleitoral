@@ -33,12 +33,8 @@
       resu.innerHTML = `<p>Você tem ${idade} anos.</p>`;
       if (idade < 16) {
         resu.innerHTML = `<p>Você não tem o direito de votar.</p>`;
-      } if (idade < 18) {
-        resu.innerHTML = `<p>Você pode votar, mas não é obrigatório.</p>`;
-      } if (idade >= 18) {
-          resu.innerHTML = `<p>Você deve votar!</p>`;
-      } if (idade >= 65) {
-        resu.innerHTML = `<p>Você pode votar, mas não é obrigatório.</p>`;
+      } else {
+        resu.innerHTML = `<p>Você tem o direito de votar.</p>`;
       }
     }
   </script>
